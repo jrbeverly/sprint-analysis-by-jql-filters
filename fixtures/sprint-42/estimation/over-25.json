@@ -1,0 +1,36 @@
+[
+  {
+    "id": "10101",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10101",
+    "key": "PLAT-101",
+    "fields": {
+      "summary": "Implement user authentication refresh",
+      "status": {
+        "name": "Done",
+        "statusCategory": {"key": "done", "name": "Done"}
+      },
+      "priority": {"name": "Medium"},
+      "issuetype": {"name": "Story"},
+      "labels": [],
+      "customfield_10016": 3,
+      "customfield_10028": 4
+    }
+  },
+  {
+    "id": "10106",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10106",
+    "key": "PLAT-106",
+    "fields": {
+      "summary": "Refactor configuration loader",
+      "status": {
+        "name": "Done",
+        "statusCategory": {"key": "done", "name": "Done"}
+      },
+      "priority": {"name": "Low"},
+      "issuetype": {"name": "Story"},
+      "labels": [],
+      "customfield_10016": 2,
+      "customfield_10028": 5
+    }
+  }
+]

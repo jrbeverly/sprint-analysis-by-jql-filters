@@ -1,0 +1,153 @@
+[
+  {
+    "id": "10206",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10206",
+    "key": "PLAT-106",
+    "fields": {
+      "summary": "Refactor configuration loader",
+      "status": {
+        "name": "In Progress",
+        "statusCategory": {
+          "key": "indeterminate",
+          "name": "In Progress"
+        }
+      },
+      "priority": {
+        "name": "Low"
+      },
+      "issuetype": {
+        "name": "Story"
+      },
+      "labels": [],
+      "customfield_10016": 2,
+      "customfield_10028": null
+    }
+  },
+  {
+    "id": "10207",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10207",
+    "key": "PLAT-107",
+    "fields": {
+      "summary": "Migrate legacy database schema",
+      "status": {
+        "name": "In Progress",
+        "statusCategory": {
+          "key": "indeterminate",
+          "name": "In Progress"
+        }
+      },
+      "priority": {
+        "name": "High"
+      },
+      "issuetype": {
+        "name": "Story"
+      },
+      "labels": [],
+      "customfield_10016": null,
+      "customfield_10028": null
+    }
+  },
+  {
+    "id": "10208",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10208",
+    "key": "PLAT-108",
+    "fields": {
+      "summary": "Resolve authentication service outage",
+      "status": {
+        "name": "In Progress",
+        "statusCategory": {
+          "key": "indeterminate",
+          "name": "In Progress"
+        }
+      },
+      "priority": {
+        "name": "Critical"
+      },
+      "issuetype": {
+        "name": "Story"
+      },
+      "labels": [
+        "unplanned",
+        "incident",
+        "blocked"
+      ],
+      "customfield_10016": 1,
+      "customfield_10028": null
+    }
+  },
+  {
+    "id": "10209",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10209",
+    "key": "PLAT-109",
+    "fields": {
+      "summary": "Fix broken login flow after deploy",
+      "status": {
+        "name": "In Progress",
+        "statusCategory": {
+          "key": "indeterminate",
+          "name": "In Progress"
+        }
+      },
+      "priority": {
+        "name": "Critical"
+      },
+      "issuetype": {
+        "name": "Bug"
+      },
+      "labels": [
+        "unplanned",
+        "incident"
+      ],
+      "customfield_10016": null,
+      "customfield_10028": null
+    }
+  },
+  {
+    "id": "10211",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10211",
+    "key": "PLAT-111",
+    "fields": {
+      "summary": "Replace legacy caching layer",
+      "status": {
+        "name": "In Progress",
+        "statusCategory": {
+          "key": "indeterminate",
+          "name": "In Progress"
+        }
+      },
+      "priority": {
+        "name": "High"
+      },
+      "issuetype": {
+        "name": "Story"
+      },
+      "labels": [],
+      "customfield_10016": 8,
+      "customfield_10028": null
+    }
+  },
+  {
+    "id": "10212",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10212",
+    "key": "PLAT-112",
+    "fields": {
+      "summary": "Upgrade database client drivers",
+      "status": {
+        "name": "In Progress",
+        "statusCategory": {
+          "key": "indeterminate",
+          "name": "In Progress"
+        }
+      },
+      "priority": {
+        "name": "Medium"
+      },
+      "issuetype": {
+        "name": "Story"
+      },
+      "labels": [],
+      "customfield_10016": 3,
+      "customfield_10028": null
+    }
+  }
+]

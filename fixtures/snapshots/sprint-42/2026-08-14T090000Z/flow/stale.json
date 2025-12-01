@@ -1,0 +1,4 @@
+{
+  "unavailable": true,
+  "reason": "stale requires time-since-last-update; updated timestamp is not a substitute for time-active duration"
+}

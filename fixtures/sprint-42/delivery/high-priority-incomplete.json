@@ -1,0 +1,53 @@
+[
+  {
+    "id": "10107",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10107",
+    "key": "PLAT-107",
+    "fields": {
+      "summary": "Migrate legacy database schema",
+      "status": {
+        "name": "In Progress",
+        "statusCategory": {"key": "indeterminate", "name": "In Progress"}
+      },
+      "priority": {"name": "High"},
+      "issuetype": {"name": "Story"},
+      "labels": [],
+      "customfield_10016": null,
+      "customfield_10028": null
+    }
+  },
+  {
+    "id": "10108",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10108",
+    "key": "PLAT-108",
+    "fields": {
+      "summary": "Resolve authentication service outage",
+      "status": {
+        "name": "In Progress",
+        "statusCategory": {"key": "indeterminate", "name": "In Progress"}
+      },
+      "priority": {"name": "Critical"},
+      "issuetype": {"name": "Story"},
+      "labels": ["unplanned", "incident"],
+      "customfield_10016": 1,
+      "customfield_10028": null
+    }
+  },
+  {
+    "id": "10109",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10109",
+    "key": "PLAT-109",
+    "fields": {
+      "summary": "Fix broken login flow after deploy",
+      "status": {
+        "name": "In Progress",
+        "statusCategory": {"key": "indeterminate", "name": "In Progress"}
+      },
+      "priority": {"name": "Critical"},
+      "issuetype": {"name": "Bug"},
+      "labels": ["unplanned", "incident"],
+      "customfield_10016": null,
+      "customfield_10028": null
+    }
+  }
+]

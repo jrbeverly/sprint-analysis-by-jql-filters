@@ -1,0 +1,1 @@
+sprint = "$SPRINT_ID" AND board = "$BOARD_ID" AND statusCategory != Done AND priority in (Critical, High)

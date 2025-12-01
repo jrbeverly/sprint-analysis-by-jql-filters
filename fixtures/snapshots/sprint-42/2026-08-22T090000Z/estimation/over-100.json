@@ -1,0 +1,26 @@
+[
+  {
+    "id": "10206",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10206",
+    "key": "PLAT-106",
+    "fields": {
+      "summary": "Refactor configuration loader",
+      "status": {
+        "name": "Done",
+        "statusCategory": {
+          "key": "done",
+          "name": "Done"
+        }
+      },
+      "priority": {
+        "name": "Low"
+      },
+      "issuetype": {
+        "name": "Story"
+      },
+      "labels": [],
+      "customfield_10016": 2,
+      "customfield_10028": 5
+    }
+  }
+]

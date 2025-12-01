@@ -1,0 +1,83 @@
+[
+  {
+    "id": "10204",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10204",
+    "key": "PLAT-104",
+    "fields": {
+      "summary": "Rotate production credentials",
+      "status": {
+        "name": "Done",
+        "statusCategory": {
+          "key": "done",
+          "name": "Done"
+        }
+      },
+      "priority": {
+        "name": "Medium"
+      },
+      "issuetype": {
+        "name": "Chore"
+      },
+      "labels": [
+        "unplanned"
+      ],
+      "customfield_10016": null,
+      "customfield_10028": null
+    }
+  },
+  {
+    "id": "10208",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10208",
+    "key": "PLAT-108",
+    "fields": {
+      "summary": "Resolve authentication service outage",
+      "status": {
+        "name": "In Progress",
+        "statusCategory": {
+          "key": "indeterminate",
+          "name": "In Progress"
+        }
+      },
+      "priority": {
+        "name": "Critical"
+      },
+      "issuetype": {
+        "name": "Story"
+      },
+      "labels": [
+        "unplanned",
+        "incident",
+        "blocked"
+      ],
+      "customfield_10016": 1,
+      "customfield_10028": null
+    }
+  },
+  {
+    "id": "10209",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10209",
+    "key": "PLAT-109",
+    "fields": {
+      "summary": "Fix broken login flow after deploy",
+      "status": {
+        "name": "In Progress",
+        "statusCategory": {
+          "key": "indeterminate",
+          "name": "In Progress"
+        }
+      },
+      "priority": {
+        "name": "Critical"
+      },
+      "issuetype": {
+        "name": "Bug"
+      },
+      "labels": [
+        "unplanned",
+        "incident"
+      ],
+      "customfield_10016": null,
+      "customfield_10028": null
+    }
+  }
+]

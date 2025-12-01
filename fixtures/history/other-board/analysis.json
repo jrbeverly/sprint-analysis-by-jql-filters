@@ -1,0 +1,139 @@
+{
+  "definitions": {
+    "delivery.completed": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(delivery/completed.json)",
+      "unit": "fraction"
+    },
+    "delivery.high_priority_incomplete": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(delivery/high_priority_incomplete.json)",
+      "unit": "fraction"
+    },
+    "delivery.incomplete": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(delivery/incomplete.json)",
+      "unit": "fraction"
+    },
+    "estimation.missing": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(estimation/missing.json)",
+      "unit": "fraction"
+    },
+    "estimation.over_100": {
+      "denominator": "count(estimation/eligible.json)",
+      "numerator": "count(estimation/over_100.json)",
+      "unit": "fraction"
+    },
+    "estimation.over_25": {
+      "denominator": "count(estimation/eligible.json)",
+      "numerator": "count(estimation/over_25.json)",
+      "unit": "fraction"
+    },
+    "estimation.over_50": {
+      "denominator": "count(estimation/eligible.json)",
+      "numerator": "count(estimation/over_50.json)",
+      "unit": "fraction"
+    },
+    "estimation.within_tolerance": {
+      "denominator": "count(estimation/eligible.json)",
+      "numerator": "count(estimation/within_tolerance.json)",
+      "unit": "fraction"
+    },
+    "flow.active": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(flow/active.json)",
+      "unit": "fraction"
+    },
+    "flow.aging_2d": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(flow/aging_2d.json)",
+      "unit": "fraction"
+    },
+    "flow.aging_4d": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(flow/aging_4d.json)",
+      "unit": "fraction"
+    },
+    "flow.aging_7d": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(flow/aging_7d.json)",
+      "unit": "fraction"
+    },
+    "flow.blocked": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(flow/blocked.json)",
+      "unit": "fraction"
+    },
+    "flow.reopened": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(flow/reopened.json)",
+      "unit": "fraction"
+    },
+    "taxonomy.bug": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(taxonomy/bug.json)",
+      "unit": "fraction"
+    },
+    "taxonomy.chore": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(taxonomy/chore.json)",
+      "unit": "fraction"
+    },
+    "taxonomy.incident": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(taxonomy/incident.json)",
+      "unit": "fraction"
+    },
+    "taxonomy.planned": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(taxonomy/planned.json)",
+      "unit": "fraction"
+    },
+    "taxonomy.responsibility": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(taxonomy/responsibility.json)",
+      "unit": "fraction"
+    },
+    "taxonomy.support": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(taxonomy/support.json)",
+      "unit": "fraction"
+    },
+    "taxonomy.unplanned": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(taxonomy/unplanned.json)",
+      "unit": "fraction"
+    }
+  },
+  "delivery": {
+    "completed": {
+      "count": 5,
+      "denominator": 8,
+      "issues": [],
+      "percentage": 0.625
+    },
+    "high_priority_incomplete": {
+      "count": 1,
+      "denominator": 8,
+      "issues": [],
+      "percentage": 0.125
+    },
+    "incomplete": {
+      "count": 3,
+      "denominator": 8,
+      "issues": [],
+      "percentage": 0.375
+    }
+  },
+  "observation_kind": "final",
+  "observation_time": "2026-07-11T09:00:00Z",
+  "sprint": {
+    "board_id": 99,
+    "sprint_end": "2026-07-11T00:00:00.000Z",
+    "sprint_id": 900,
+    "sprint_name": "Other Board Sprint 5",
+    "sprint_start": "2026-07-01T00:00:00.000Z",
+    "sprint_state": "closed"
+  }
+}

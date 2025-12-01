@@ -1,0 +1,2 @@
+sprint = "$SPRINT_ID" AND board = "$BOARD_ID" AND statusCategory = "In Progress"
+  AND status CHANGED TO "In Progress" BEFORE -4d

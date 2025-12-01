@@ -1,0 +1,98 @@
+[
+  {
+    "id": "10202",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10202",
+    "key": "PLAT-102",
+    "fields": {
+      "summary": "Add rate limiting to public API",
+      "status": {
+        "name": "To Do",
+        "statusCategory": {
+          "key": "new",
+          "name": "To Do"
+        }
+      },
+      "priority": {
+        "name": "High"
+      },
+      "issuetype": {
+        "name": "Story"
+      },
+      "labels": [],
+      "customfield_10016": 5,
+      "customfield_10028": null
+    }
+  },
+  {
+    "id": "10203",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10203",
+    "key": "PLAT-103",
+    "fields": {
+      "summary": "Fix session timeout regression",
+      "status": {
+        "name": "To Do",
+        "statusCategory": {
+          "key": "new",
+          "name": "To Do"
+        }
+      },
+      "priority": {
+        "name": "High"
+      },
+      "issuetype": {
+        "name": "Bug"
+      },
+      "labels": [],
+      "customfield_10016": 2,
+      "customfield_10028": null
+    }
+  },
+  {
+    "id": "10207",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10207",
+    "key": "PLAT-107",
+    "fields": {
+      "summary": "Migrate legacy database schema",
+      "status": {
+        "name": "In Progress",
+        "statusCategory": {
+          "key": "indeterminate",
+          "name": "In Progress"
+        }
+      },
+      "priority": {
+        "name": "High"
+      },
+      "issuetype": {
+        "name": "Story"
+      },
+      "labels": [],
+      "customfield_10016": null,
+      "customfield_10028": null
+    }
+  },
+  {
+    "id": "10211",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10211",
+    "key": "PLAT-111",
+    "fields": {
+      "summary": "Replace legacy caching layer",
+      "status": {
+        "name": "To Do",
+        "statusCategory": {
+          "key": "new",
+          "name": "To Do"
+        }
+      },
+      "priority": {
+        "name": "High"
+      },
+      "issuetype": {
+        "name": "Story"
+      },
+      "labels": [],
+      "customfield_10016": 8,
+      "customfield_10028": null
+    }
+  }
+]

@@ -1,0 +1,2 @@
+sprint = "$SPRINT_ID" AND board = "$BOARD_ID"
+  AND (customfield_10016 is EMPTY OR customfield_10016 not in (1, 2, 3, 5, 8, 13) OR customfield_10028 is EMPTY)

@@ -1,0 +1,257 @@
+{
+  "definitions": {
+    "delivery.completed": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(delivery/completed.json)",
+      "unit": "fraction"
+    },
+    "delivery.high_priority_incomplete": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(delivery/high_priority_incomplete.json)",
+      "unit": "fraction"
+    },
+    "delivery.incomplete": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(delivery/incomplete.json)",
+      "unit": "fraction"
+    },
+    "estimation.missing": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(estimation/missing.json)",
+      "unit": "fraction"
+    },
+    "estimation.over_100": {
+      "denominator": "count(estimation/eligible.json)",
+      "numerator": "count(estimation/over_100.json)",
+      "unit": "fraction"
+    },
+    "estimation.over_25": {
+      "denominator": "count(estimation/eligible.json)",
+      "numerator": "count(estimation/over_25.json)",
+      "unit": "fraction"
+    },
+    "estimation.over_50": {
+      "denominator": "count(estimation/eligible.json)",
+      "numerator": "count(estimation/over_50.json)",
+      "unit": "fraction"
+    },
+    "estimation.within_tolerance": {
+      "denominator": "count(estimation/eligible.json)",
+      "numerator": "count(estimation/within_tolerance.json)",
+      "unit": "fraction"
+    },
+    "flow.active": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(flow/active.json)",
+      "unit": "fraction"
+    },
+    "flow.aging_2d": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(flow/aging_2d.json)",
+      "unit": "fraction"
+    },
+    "flow.aging_4d": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(flow/aging_4d.json)",
+      "unit": "fraction"
+    },
+    "flow.aging_7d": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(flow/aging_7d.json)",
+      "unit": "fraction"
+    },
+    "flow.blocked": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(flow/blocked.json)",
+      "unit": "fraction"
+    },
+    "flow.reopened": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(flow/reopened.json)",
+      "unit": "fraction"
+    },
+    "taxonomy.bug": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(taxonomy/bug.json)",
+      "unit": "fraction"
+    },
+    "taxonomy.chore": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(taxonomy/chore.json)",
+      "unit": "fraction"
+    },
+    "taxonomy.incident": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(taxonomy/incident.json)",
+      "unit": "fraction"
+    },
+    "taxonomy.planned": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(taxonomy/planned.json)",
+      "unit": "fraction"
+    },
+    "taxonomy.responsibility": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(taxonomy/responsibility.json)",
+      "unit": "fraction"
+    },
+    "taxonomy.support": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(taxonomy/support.json)",
+      "unit": "fraction"
+    },
+    "taxonomy.unplanned": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(taxonomy/unplanned.json)",
+      "unit": "fraction"
+    }
+  },
+  "delivery": {
+    "completed": {
+      "count": 8,
+      "denominator": 10,
+      "issues": [],
+      "percentage": 0.8
+    },
+    "high_priority_incomplete": {
+      "count": 1,
+      "denominator": 10,
+      "issues": [],
+      "percentage": 0.1
+    },
+    "incomplete": {
+      "count": 2,
+      "denominator": 10,
+      "issues": [],
+      "percentage": 0.2
+    }
+  },
+  "estimation": {
+    "missing": {
+      "count": 2,
+      "denominator": 10,
+      "issues": [],
+      "percentage": 0.2
+    },
+    "over_100": {
+      "count": null,
+      "denominator": null,
+      "issues": null,
+      "percentage": null,
+      "reason": "estimate/actual units unconfirmed for this sprint",
+      "unavailable": true
+    },
+    "over_25": {
+      "count": 1,
+      "denominator": 4,
+      "issues": [],
+      "percentage": 0.25
+    },
+    "over_50": {
+      "count": 1,
+      "denominator": 4,
+      "issues": [],
+      "percentage": 0.25
+    },
+    "within_tolerance": {
+      "count": 2,
+      "denominator": 4,
+      "issues": [],
+      "percentage": 0.5
+    }
+  },
+  "flow": {
+    "active": {
+      "count": 1,
+      "denominator": 10,
+      "issues": [],
+      "percentage": 0.1
+    },
+    "aging_2d": {
+      "count": 3,
+      "denominator": 10,
+      "issues": [],
+      "percentage": 0.3
+    },
+    "aging_4d": {
+      "count": 1,
+      "denominator": 10,
+      "issues": [],
+      "percentage": 0.1
+    },
+    "aging_7d": {
+      "count": null,
+      "denominator": null,
+      "issues": null,
+      "percentage": null,
+      "reason": "aging-7d query unavailable for this sprint",
+      "unavailable": true
+    },
+    "blocked": {
+      "count": 1,
+      "denominator": 10,
+      "issues": [],
+      "percentage": 0.1
+    },
+    "reopened": {
+      "count": 0,
+      "denominator": 10,
+      "issues": [],
+      "percentage": 0.0
+    }
+  },
+  "observation_kind": "final",
+  "observation_time": "2026-07-25T09:00:00Z",
+  "sprint": {
+    "board_id": 42,
+    "sprint_end": "2026-07-25T00:00:00.000Z",
+    "sprint_id": 410,
+    "sprint_name": "Platform Sprint 40",
+    "sprint_start": "2026-07-14T00:00:00.000Z",
+    "sprint_state": "closed"
+  },
+  "taxonomy": {
+    "bug": {
+      "count": 2,
+      "denominator": 10,
+      "issues": [],
+      "percentage": 0.2
+    },
+    "chore": {
+      "count": 1,
+      "denominator": 10,
+      "issues": [],
+      "percentage": 0.1
+    },
+    "incident": {
+      "count": 1,
+      "denominator": 10,
+      "issues": [],
+      "percentage": 0.1
+    },
+    "planned": {
+      "count": 8,
+      "denominator": 10,
+      "issues": [],
+      "percentage": 0.8
+    },
+    "responsibility": {
+      "count": 1,
+      "denominator": 10,
+      "issues": [],
+      "percentage": 0.1
+    },
+    "support": {
+      "count": 1,
+      "denominator": 10,
+      "issues": [],
+      "percentage": 0.1
+    },
+    "unplanned": {
+      "count": 2,
+      "denominator": 10,
+      "issues": [],
+      "percentage": 0.2
+    }
+  }
+}

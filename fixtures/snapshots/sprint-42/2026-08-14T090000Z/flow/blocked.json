@@ -1,0 +1,30 @@
+[
+  {
+    "id": "10208",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10208",
+    "key": "PLAT-108",
+    "fields": {
+      "summary": "Resolve authentication service outage",
+      "status": {
+        "name": "In Progress",
+        "statusCategory": {
+          "key": "indeterminate",
+          "name": "In Progress"
+        }
+      },
+      "priority": {
+        "name": "Critical"
+      },
+      "issuetype": {
+        "name": "Story"
+      },
+      "labels": [
+        "unplanned",
+        "incident",
+        "blocked"
+      ],
+      "customfield_10016": 1,
+      "customfield_10028": null
+    }
+  }
+]

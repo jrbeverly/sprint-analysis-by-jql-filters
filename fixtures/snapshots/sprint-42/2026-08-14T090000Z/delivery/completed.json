@@ -1,0 +1,102 @@
+[
+  {
+    "id": "10201",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10201",
+    "key": "PLAT-101",
+    "fields": {
+      "summary": "Implement user authentication refresh",
+      "status": {
+        "name": "Done",
+        "statusCategory": {
+          "key": "done",
+          "name": "Done"
+        }
+      },
+      "priority": {
+        "name": "Medium"
+      },
+      "issuetype": {
+        "name": "Story"
+      },
+      "labels": [],
+      "customfield_10016": 3,
+      "customfield_10028": 4
+    }
+  },
+  {
+    "id": "10202",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10202",
+    "key": "PLAT-102",
+    "fields": {
+      "summary": "Add rate limiting to public API",
+      "status": {
+        "name": "Done",
+        "statusCategory": {
+          "key": "done",
+          "name": "Done"
+        }
+      },
+      "priority": {
+        "name": "High"
+      },
+      "issuetype": {
+        "name": "Story"
+      },
+      "labels": [],
+      "customfield_10016": 5,
+      "customfield_10028": 5
+    }
+  },
+  {
+    "id": "10204",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10204",
+    "key": "PLAT-104",
+    "fields": {
+      "summary": "Rotate production credentials",
+      "status": {
+        "name": "Done",
+        "statusCategory": {
+          "key": "done",
+          "name": "Done"
+        }
+      },
+      "priority": {
+        "name": "Medium"
+      },
+      "issuetype": {
+        "name": "Chore"
+      },
+      "labels": [
+        "unplanned"
+      ],
+      "customfield_10016": null,
+      "customfield_10028": null
+    }
+  },
+  {
+    "id": "10205",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10205",
+    "key": "PLAT-105",
+    "fields": {
+      "summary": "Investigate slow dashboard load reports",
+      "status": {
+        "name": "Done",
+        "statusCategory": {
+          "key": "done",
+          "name": "Done"
+        }
+      },
+      "priority": {
+        "name": "Medium"
+      },
+      "issuetype": {
+        "name": "Story"
+      },
+      "labels": [
+        "support"
+      ],
+      "customfield_10016": null,
+      "customfield_10028": null
+    }
+  }
+]

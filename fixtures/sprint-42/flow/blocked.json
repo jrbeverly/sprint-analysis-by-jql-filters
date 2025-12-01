@@ -1,0 +1,19 @@
+[
+  {
+    "id": "10109",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10109",
+    "key": "PLAT-109",
+    "fields": {
+      "summary": "Fix broken login flow after deploy",
+      "status": {
+        "name": "In Progress",
+        "statusCategory": {"key": "indeterminate", "name": "In Progress"}
+      },
+      "priority": {"name": "Critical"},
+      "issuetype": {"name": "Bug"},
+      "labels": ["unplanned", "incident"],
+      "customfield_10016": null,
+      "customfield_10028": null
+    }
+  }
+]

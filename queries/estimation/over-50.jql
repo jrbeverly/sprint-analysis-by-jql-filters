@@ -1,0 +1,8 @@
+sprint = "$SPRINT_ID" AND board = "$BOARD_ID" AND (
+  (customfield_10016 = 1  AND customfield_10028 > 1.5)   OR
+  (customfield_10016 = 2  AND customfield_10028 > 3)     OR
+  (customfield_10016 = 3  AND customfield_10028 > 4.5)   OR
+  (customfield_10016 = 5  AND customfield_10028 > 7.5)   OR
+  (customfield_10016 = 8  AND customfield_10028 > 12)    OR
+  (customfield_10016 = 13 AND customfield_10028 > 19.5)
+)

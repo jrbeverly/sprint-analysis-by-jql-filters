@@ -1,0 +1,26 @@
+[
+  {
+    "id": "10210",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10210",
+    "key": "PLAT-110",
+    "fields": {
+      "summary": "Handle payment gateway timeout errors",
+      "status": {
+        "name": "In Progress",
+        "statusCategory": {
+          "key": "indeterminate",
+          "name": "In Progress"
+        }
+      },
+      "priority": {
+        "name": "Medium"
+      },
+      "issuetype": {
+        "name": "Bug"
+      },
+      "labels": [],
+      "customfield_10016": 3,
+      "customfield_10028": null
+    }
+  }
+]

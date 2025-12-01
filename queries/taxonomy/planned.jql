@@ -1,0 +1,1 @@
+sprint = "$SPRINT_ID" AND board = "$BOARD_ID" AND sprint CHANGED TO "$SPRINT_ID" BEFORE "$SPRINT_START"

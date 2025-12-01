@@ -1,0 +1,1 @@
+sprint = "$SPRINT_ID" AND board = "$BOARD_ID" AND (issuetype = Chore OR labels = "chore")

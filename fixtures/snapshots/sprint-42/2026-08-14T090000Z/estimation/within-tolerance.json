@@ -1,0 +1,26 @@
+[
+  {
+    "id": "10202",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10202",
+    "key": "PLAT-102",
+    "fields": {
+      "summary": "Add rate limiting to public API",
+      "status": {
+        "name": "Done",
+        "statusCategory": {
+          "key": "done",
+          "name": "Done"
+        }
+      },
+      "priority": {
+        "name": "High"
+      },
+      "issuetype": {
+        "name": "Story"
+      },
+      "labels": [],
+      "customfield_10016": 5,
+      "customfield_10028": 5
+    }
+  }
+]

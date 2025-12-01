@@ -1,0 +1,196 @@
+[
+  {
+    "id": "10201",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10201",
+    "key": "PLAT-101",
+    "fields": {
+      "summary": "Implement user authentication refresh",
+      "status": {
+        "name": "To Do",
+        "statusCategory": {
+          "key": "new",
+          "name": "To Do"
+        }
+      },
+      "priority": {
+        "name": "Medium"
+      },
+      "issuetype": {
+        "name": "Story"
+      },
+      "labels": [],
+      "customfield_10016": 3,
+      "customfield_10028": null
+    }
+  },
+  {
+    "id": "10202",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10202",
+    "key": "PLAT-102",
+    "fields": {
+      "summary": "Add rate limiting to public API",
+      "status": {
+        "name": "To Do",
+        "statusCategory": {
+          "key": "new",
+          "name": "To Do"
+        }
+      },
+      "priority": {
+        "name": "High"
+      },
+      "issuetype": {
+        "name": "Story"
+      },
+      "labels": [],
+      "customfield_10016": 5,
+      "customfield_10028": null
+    }
+  },
+  {
+    "id": "10203",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10203",
+    "key": "PLAT-103",
+    "fields": {
+      "summary": "Fix session timeout regression",
+      "status": {
+        "name": "To Do",
+        "statusCategory": {
+          "key": "new",
+          "name": "To Do"
+        }
+      },
+      "priority": {
+        "name": "High"
+      },
+      "issuetype": {
+        "name": "Bug"
+      },
+      "labels": [],
+      "customfield_10016": 2,
+      "customfield_10028": null
+    }
+  },
+  {
+    "id": "10205",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10205",
+    "key": "PLAT-105",
+    "fields": {
+      "summary": "Investigate slow dashboard load reports",
+      "status": {
+        "name": "To Do",
+        "statusCategory": {
+          "key": "new",
+          "name": "To Do"
+        }
+      },
+      "priority": {
+        "name": "Medium"
+      },
+      "issuetype": {
+        "name": "Story"
+      },
+      "labels": [
+        "support"
+      ],
+      "customfield_10016": null,
+      "customfield_10028": null
+    }
+  },
+  {
+    "id": "10206",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10206",
+    "key": "PLAT-106",
+    "fields": {
+      "summary": "Refactor configuration loader",
+      "status": {
+        "name": "To Do",
+        "statusCategory": {
+          "key": "new",
+          "name": "To Do"
+        }
+      },
+      "priority": {
+        "name": "Low"
+      },
+      "issuetype": {
+        "name": "Story"
+      },
+      "labels": [],
+      "customfield_10016": 2,
+      "customfield_10028": null
+    }
+  },
+  {
+    "id": "10207",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10207",
+    "key": "PLAT-107",
+    "fields": {
+      "summary": "Migrate legacy database schema",
+      "status": {
+        "name": "In Progress",
+        "statusCategory": {
+          "key": "indeterminate",
+          "name": "In Progress"
+        }
+      },
+      "priority": {
+        "name": "High"
+      },
+      "issuetype": {
+        "name": "Story"
+      },
+      "labels": [],
+      "customfield_10016": null,
+      "customfield_10028": null
+    }
+  },
+  {
+    "id": "10211",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10211",
+    "key": "PLAT-111",
+    "fields": {
+      "summary": "Replace legacy caching layer",
+      "status": {
+        "name": "To Do",
+        "statusCategory": {
+          "key": "new",
+          "name": "To Do"
+        }
+      },
+      "priority": {
+        "name": "High"
+      },
+      "issuetype": {
+        "name": "Story"
+      },
+      "labels": [],
+      "customfield_10016": 8,
+      "customfield_10028": null
+    }
+  },
+  {
+    "id": "10212",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10212",
+    "key": "PLAT-112",
+    "fields": {
+      "summary": "Upgrade database client drivers",
+      "status": {
+        "name": "To Do",
+        "statusCategory": {
+          "key": "new",
+          "name": "To Do"
+        }
+      },
+      "priority": {
+        "name": "Medium"
+      },
+      "issuetype": {
+        "name": "Story"
+      },
+      "labels": [],
+      "customfield_10016": 3,
+      "customfield_10028": null
+    }
+  }
+]

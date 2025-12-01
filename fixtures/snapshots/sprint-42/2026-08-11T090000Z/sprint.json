@@ -1,0 +1,11 @@
+{
+  "board_id": 42,
+  "sprint_id": 420,
+  "sprint_name": "Platform Sprint 42",
+  "sprint_state": "active",
+  "sprint_start": "2026-08-11T00:00:00.000Z",
+  "sprint_end": "2026-08-22T00:00:00.000Z",
+  "observation_time": "2026-08-11T09:00:00Z",
+  "acquisition_start": "2026-08-11T08:55:00Z",
+  "acquisition_end": "2026-08-11T09:01:30Z"
+}

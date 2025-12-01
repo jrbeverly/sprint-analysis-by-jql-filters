@@ -1,0 +1,78 @@
+[
+  {
+    "id": "10203",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10203",
+    "key": "PLAT-103",
+    "fields": {
+      "summary": "Fix session timeout regression",
+      "status": {
+        "name": "Done",
+        "statusCategory": {
+          "key": "done",
+          "name": "Done"
+        }
+      },
+      "priority": {
+        "name": "High"
+      },
+      "issuetype": {
+        "name": "Bug"
+      },
+      "labels": [],
+      "customfield_10016": 2,
+      "customfield_10028": 2
+    }
+  },
+  {
+    "id": "10209",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10209",
+    "key": "PLAT-109",
+    "fields": {
+      "summary": "Fix broken login flow after deploy",
+      "status": {
+        "name": "In Progress",
+        "statusCategory": {
+          "key": "indeterminate",
+          "name": "In Progress"
+        }
+      },
+      "priority": {
+        "name": "Critical"
+      },
+      "issuetype": {
+        "name": "Bug"
+      },
+      "labels": [
+        "unplanned",
+        "incident",
+        "blocked"
+      ],
+      "customfield_10016": null,
+      "customfield_10028": null
+    }
+  },
+  {
+    "id": "10210",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10210",
+    "key": "PLAT-110",
+    "fields": {
+      "summary": "Handle payment gateway timeout errors",
+      "status": {
+        "name": "In Progress",
+        "statusCategory": {
+          "key": "indeterminate",
+          "name": "In Progress"
+        }
+      },
+      "priority": {
+        "name": "Medium"
+      },
+      "issuetype": {
+        "name": "Bug"
+      },
+      "labels": [],
+      "customfield_10016": 3,
+      "customfield_10028": null
+    }
+  }
+]

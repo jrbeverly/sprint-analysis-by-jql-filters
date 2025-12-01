@@ -1,0 +1,28 @@
+[
+  {
+    "id": "10205",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10205",
+    "key": "PLAT-105",
+    "fields": {
+      "summary": "Investigate slow dashboard load reports",
+      "status": {
+        "name": "To Do",
+        "statusCategory": {
+          "key": "new",
+          "name": "To Do"
+        }
+      },
+      "priority": {
+        "name": "Medium"
+      },
+      "issuetype": {
+        "name": "Story"
+      },
+      "labels": [
+        "support"
+      ],
+      "customfield_10016": null,
+      "customfield_10028": null
+    }
+  }
+]

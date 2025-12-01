@@ -1,0 +1,19 @@
+[
+  {
+    "id": "10104",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10104",
+    "key": "PLAT-104",
+    "fields": {
+      "summary": "Rotate production credentials",
+      "status": {
+        "name": "Done",
+        "statusCategory": {"key": "done", "name": "Done"}
+      },
+      "priority": {"name": "Medium"},
+      "issuetype": {"name": "Chore"},
+      "labels": ["unplanned"],
+      "customfield_10016": null,
+      "customfield_10028": null
+    }
+  }
+]

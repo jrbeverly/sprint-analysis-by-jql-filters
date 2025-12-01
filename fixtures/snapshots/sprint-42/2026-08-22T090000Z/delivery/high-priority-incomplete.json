@@ -1,0 +1,54 @@
+[
+  {
+    "id": "10207",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10207",
+    "key": "PLAT-107",
+    "fields": {
+      "summary": "Migrate legacy database schema",
+      "status": {
+        "name": "In Progress",
+        "statusCategory": {
+          "key": "indeterminate",
+          "name": "In Progress"
+        }
+      },
+      "priority": {
+        "name": "High"
+      },
+      "issuetype": {
+        "name": "Story"
+      },
+      "labels": [],
+      "customfield_10016": null,
+      "customfield_10028": null
+    }
+  },
+  {
+    "id": "10209",
+    "self": "https://example.atlassian.net/rest/agile/1.0/issue/10209",
+    "key": "PLAT-109",
+    "fields": {
+      "summary": "Fix broken login flow after deploy",
+      "status": {
+        "name": "In Progress",
+        "statusCategory": {
+          "key": "indeterminate",
+          "name": "In Progress"
+        }
+      },
+      "priority": {
+        "name": "Critical"
+      },
+      "issuetype": {
+        "name": "Bug"
+      },
+      "labels": [
+        "unplanned",
+        "incident",
+        "blocked"
+      ],
+      "customfield_10016": null,
+      "customfield_10028": null
+    }
+  }
+]

@@ -1,0 +1,2530 @@
+{
+  "availability": [
+    {
+      "metric": "delivery.spillover",
+      "reason": "active sprint; final-snapshot incomplete work is proposed outgoing-spillover definition pending board owner confirmation",
+      "unavailable": true
+    },
+    {
+      "metric": "flow.stale",
+      "reason": "requires a Jira history predicate for time since last update; cannot substitute updated timestamp for time-active duration",
+      "unavailable": true
+    }
+  ],
+  "definitions": {
+    "delivery.completed": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(delivery/completed.json)",
+      "unit": "fraction"
+    },
+    "delivery.high_priority_incomplete": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(delivery/high_priority_incomplete.json)",
+      "unit": "fraction"
+    },
+    "delivery.incomplete": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(delivery/incomplete.json)",
+      "unit": "fraction"
+    },
+    "estimation.missing": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(estimation/missing.json)",
+      "unit": "fraction"
+    },
+    "estimation.over_100": {
+      "denominator": "count(estimation/eligible.json)",
+      "numerator": "count(estimation/over_100.json)",
+      "unit": "fraction"
+    },
+    "estimation.over_25": {
+      "denominator": "count(estimation/eligible.json)",
+      "numerator": "count(estimation/over_25.json)",
+      "unit": "fraction"
+    },
+    "estimation.over_50": {
+      "denominator": "count(estimation/eligible.json)",
+      "numerator": "count(estimation/over_50.json)",
+      "unit": "fraction"
+    },
+    "estimation.within_tolerance": {
+      "denominator": "count(estimation/eligible.json)",
+      "numerator": "count(estimation/within_tolerance.json)",
+      "unit": "fraction"
+    },
+    "flow.active": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(flow/active.json)",
+      "unit": "fraction"
+    },
+    "flow.aging_2d": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(flow/aging_2d.json)",
+      "unit": "fraction"
+    },
+    "flow.aging_4d": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(flow/aging_4d.json)",
+      "unit": "fraction"
+    },
+    "flow.aging_7d": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(flow/aging_7d.json)",
+      "unit": "fraction"
+    },
+    "flow.blocked": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(flow/blocked.json)",
+      "unit": "fraction"
+    },
+    "flow.reopened": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(flow/reopened.json)",
+      "unit": "fraction"
+    },
+    "taxonomy.bug": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(taxonomy/bug.json)",
+      "unit": "fraction"
+    },
+    "taxonomy.chore": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(taxonomy/chore.json)",
+      "unit": "fraction"
+    },
+    "taxonomy.incident": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(taxonomy/incident.json)",
+      "unit": "fraction"
+    },
+    "taxonomy.planned": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(taxonomy/planned.json)",
+      "unit": "fraction"
+    },
+    "taxonomy.responsibility": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(taxonomy/responsibility.json)",
+      "unit": "fraction"
+    },
+    "taxonomy.support": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(taxonomy/support.json)",
+      "unit": "fraction"
+    },
+    "taxonomy.unplanned": {
+      "denominator": "count(all-issues.json)",
+      "numerator": "count(taxonomy/unplanned.json)",
+      "unit": "fraction"
+    }
+  },
+  "delivery": {
+    "completed": {
+      "count": 6,
+      "denominator": 10,
+      "issues": [
+        {
+          "actual": 4,
+          "estimate": 3,
+          "key": "PLAT-101",
+          "summary": "Implement user authentication refresh",
+          "taxonomy": [
+            "planned"
+          ]
+        },
+        {
+          "actual": 5,
+          "estimate": 5,
+          "key": "PLAT-102",
+          "summary": "Add rate limiting to public API",
+          "taxonomy": [
+            "planned"
+          ]
+        },
+        {
+          "actual": 2,
+          "estimate": 2,
+          "key": "PLAT-103",
+          "summary": "Fix session timeout regression",
+          "taxonomy": [
+            "bug",
+            "planned"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": null,
+          "key": "PLAT-104",
+          "summary": "Rotate production credentials",
+          "taxonomy": [
+            "chore",
+            "responsibility",
+            "unplanned"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": null,
+          "key": "PLAT-105",
+          "summary": "Investigate slow dashboard load reports",
+          "taxonomy": [
+            "planned",
+            "support"
+          ]
+        },
+        {
+          "actual": 5,
+          "estimate": 2,
+          "key": "PLAT-106",
+          "summary": "Refactor configuration loader",
+          "taxonomy": [
+            "planned"
+          ]
+        }
+      ],
+      "percentage": 0.6
+    },
+    "high_priority_incomplete": {
+      "count": 3,
+      "denominator": 10,
+      "issues": [
+        {
+          "actual": null,
+          "estimate": null,
+          "key": "PLAT-107",
+          "summary": "Migrate legacy database schema",
+          "taxonomy": [
+            "planned"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": 1,
+          "key": "PLAT-108",
+          "summary": "Resolve authentication service outage",
+          "taxonomy": [
+            "incident",
+            "unplanned"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": null,
+          "key": "PLAT-109",
+          "summary": "Fix broken login flow after deploy",
+          "taxonomy": [
+            "bug",
+            "incident",
+            "unplanned"
+          ]
+        }
+      ],
+      "percentage": 0.3
+    },
+    "incomplete": {
+      "composition": {
+        "bug": {
+          "count": 2,
+          "denominator": 4,
+          "issues": [
+            {
+              "actual": null,
+              "estimate": null,
+              "key": "PLAT-109",
+              "summary": "Fix broken login flow after deploy",
+              "taxonomy": [
+                "bug",
+                "incident",
+                "unplanned"
+              ]
+            },
+            {
+              "actual": null,
+              "estimate": 3,
+              "key": "PLAT-110",
+              "summary": "Handle payment gateway timeout errors",
+              "taxonomy": [
+                "bug",
+                "planned"
+              ]
+            }
+          ],
+          "percentage": 0.5
+        },
+        "chore": {
+          "count": 0,
+          "denominator": 4,
+          "issues": [],
+          "percentage": 0.0
+        },
+        "incident": {
+          "count": 2,
+          "denominator": 4,
+          "issues": [
+            {
+              "actual": null,
+              "estimate": 1,
+              "key": "PLAT-108",
+              "summary": "Resolve authentication service outage",
+              "taxonomy": [
+                "incident",
+                "unplanned"
+              ]
+            },
+            {
+              "actual": null,
+              "estimate": null,
+              "key": "PLAT-109",
+              "summary": "Fix broken login flow after deploy",
+              "taxonomy": [
+                "bug",
+                "incident",
+                "unplanned"
+              ]
+            }
+          ],
+          "percentage": 0.5
+        },
+        "planned": {
+          "count": 2,
+          "denominator": 4,
+          "issues": [
+            {
+              "actual": null,
+              "estimate": null,
+              "key": "PLAT-107",
+              "summary": "Migrate legacy database schema",
+              "taxonomy": [
+                "planned"
+              ]
+            },
+            {
+              "actual": null,
+              "estimate": 3,
+              "key": "PLAT-110",
+              "summary": "Handle payment gateway timeout errors",
+              "taxonomy": [
+                "bug",
+                "planned"
+              ]
+            }
+          ],
+          "percentage": 0.5
+        },
+        "responsibility": {
+          "count": 0,
+          "denominator": 4,
+          "issues": [],
+          "percentage": 0.0
+        },
+        "support": {
+          "count": 0,
+          "denominator": 4,
+          "issues": [],
+          "percentage": 0.0
+        },
+        "unplanned": {
+          "count": 2,
+          "denominator": 4,
+          "issues": [
+            {
+              "actual": null,
+              "estimate": 1,
+              "key": "PLAT-108",
+              "summary": "Resolve authentication service outage",
+              "taxonomy": [
+                "incident",
+                "unplanned"
+              ]
+            },
+            {
+              "actual": null,
+              "estimate": null,
+              "key": "PLAT-109",
+              "summary": "Fix broken login flow after deploy",
+              "taxonomy": [
+                "bug",
+                "incident",
+                "unplanned"
+              ]
+            }
+          ],
+          "percentage": 0.5
+        }
+      },
+      "count": 4,
+      "denominator": 10,
+      "issues": [
+        {
+          "actual": null,
+          "estimate": null,
+          "key": "PLAT-107",
+          "summary": "Migrate legacy database schema",
+          "taxonomy": [
+            "planned"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": 1,
+          "key": "PLAT-108",
+          "summary": "Resolve authentication service outage",
+          "taxonomy": [
+            "incident",
+            "unplanned"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": null,
+          "key": "PLAT-109",
+          "summary": "Fix broken login flow after deploy",
+          "taxonomy": [
+            "bug",
+            "incident",
+            "unplanned"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": 3,
+          "key": "PLAT-110",
+          "summary": "Handle payment gateway timeout errors",
+          "taxonomy": [
+            "bug",
+            "planned"
+          ]
+        }
+      ],
+      "percentage": 0.4
+    },
+    "spillover": {
+      "count": null,
+      "denominator": null,
+      "issues": null,
+      "percentage": null,
+      "reason": "active sprint; final-snapshot incomplete work is proposed outgoing-spillover definition pending board owner confirmation",
+      "unavailable": true
+    },
+    "total": 10
+  },
+  "estimation": {
+    "eligible_count": 4,
+    "missing": {
+      "count": 6,
+      "denominator": 10,
+      "issues": [
+        {
+          "actual": null,
+          "estimate": null,
+          "key": "PLAT-104",
+          "summary": "Rotate production credentials",
+          "taxonomy": [
+            "chore",
+            "responsibility",
+            "unplanned"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": null,
+          "key": "PLAT-105",
+          "summary": "Investigate slow dashboard load reports",
+          "taxonomy": [
+            "planned",
+            "support"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": null,
+          "key": "PLAT-107",
+          "summary": "Migrate legacy database schema",
+          "taxonomy": [
+            "planned"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": 1,
+          "key": "PLAT-108",
+          "summary": "Resolve authentication service outage",
+          "taxonomy": [
+            "incident",
+            "unplanned"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": null,
+          "key": "PLAT-109",
+          "summary": "Fix broken login flow after deploy",
+          "taxonomy": [
+            "bug",
+            "incident",
+            "unplanned"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": 3,
+          "key": "PLAT-110",
+          "summary": "Handle payment gateway timeout errors",
+          "taxonomy": [
+            "bug",
+            "planned"
+          ]
+        }
+      ],
+      "percentage": 0.6
+    },
+    "over_100": {
+      "count": 1,
+      "denominator": 4,
+      "issues": [
+        {
+          "actual": 5,
+          "estimate": 2,
+          "key": "PLAT-106",
+          "summary": "Refactor configuration loader",
+          "taxonomy": [
+            "planned"
+          ]
+        }
+      ],
+      "percentage": 0.25
+    },
+    "over_25": {
+      "count": 2,
+      "denominator": 4,
+      "issues": [
+        {
+          "actual": 4,
+          "estimate": 3,
+          "key": "PLAT-101",
+          "summary": "Implement user authentication refresh",
+          "taxonomy": [
+            "planned"
+          ]
+        },
+        {
+          "actual": 5,
+          "estimate": 2,
+          "key": "PLAT-106",
+          "summary": "Refactor configuration loader",
+          "taxonomy": [
+            "planned"
+          ]
+        }
+      ],
+      "percentage": 0.5
+    },
+    "over_50": {
+      "count": 1,
+      "denominator": 4,
+      "issues": [
+        {
+          "actual": 5,
+          "estimate": 2,
+          "key": "PLAT-106",
+          "summary": "Refactor configuration loader",
+          "taxonomy": [
+            "planned"
+          ]
+        }
+      ],
+      "percentage": 0.25
+    },
+    "within_tolerance": {
+      "count": 2,
+      "denominator": 4,
+      "issues": [
+        {
+          "actual": 5,
+          "estimate": 5,
+          "key": "PLAT-102",
+          "summary": "Add rate limiting to public API",
+          "taxonomy": [
+            "planned"
+          ]
+        },
+        {
+          "actual": 2,
+          "estimate": 2,
+          "key": "PLAT-103",
+          "summary": "Fix session timeout regression",
+          "taxonomy": [
+            "bug",
+            "planned"
+          ]
+        }
+      ],
+      "percentage": 0.5
+    }
+  },
+  "flow": {
+    "active": {
+      "count": 4,
+      "denominator": 10,
+      "issues": [
+        {
+          "actual": null,
+          "estimate": null,
+          "key": "PLAT-107",
+          "summary": "Migrate legacy database schema",
+          "taxonomy": [
+            "planned"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": 1,
+          "key": "PLAT-108",
+          "summary": "Resolve authentication service outage",
+          "taxonomy": [
+            "incident",
+            "unplanned"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": null,
+          "key": "PLAT-109",
+          "summary": "Fix broken login flow after deploy",
+          "taxonomy": [
+            "bug",
+            "incident",
+            "unplanned"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": 3,
+          "key": "PLAT-110",
+          "summary": "Handle payment gateway timeout errors",
+          "taxonomy": [
+            "bug",
+            "planned"
+          ]
+        }
+      ],
+      "percentage": 0.4
+    },
+    "aging_2d": {
+      "count": 4,
+      "denominator": 10,
+      "issues": [
+        {
+          "actual": null,
+          "estimate": null,
+          "key": "PLAT-107",
+          "summary": "Migrate legacy database schema",
+          "taxonomy": [
+            "planned"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": 1,
+          "key": "PLAT-108",
+          "summary": "Resolve authentication service outage",
+          "taxonomy": [
+            "incident",
+            "unplanned"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": null,
+          "key": "PLAT-109",
+          "summary": "Fix broken login flow after deploy",
+          "taxonomy": [
+            "bug",
+            "incident",
+            "unplanned"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": 3,
+          "key": "PLAT-110",
+          "summary": "Handle payment gateway timeout errors",
+          "taxonomy": [
+            "bug",
+            "planned"
+          ]
+        }
+      ],
+      "percentage": 0.4
+    },
+    "aging_4d": {
+      "count": 2,
+      "denominator": 10,
+      "issues": [
+        {
+          "actual": null,
+          "estimate": null,
+          "key": "PLAT-107",
+          "summary": "Migrate legacy database schema",
+          "taxonomy": [
+            "planned"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": 1,
+          "key": "PLAT-108",
+          "summary": "Resolve authentication service outage",
+          "taxonomy": [
+            "incident",
+            "unplanned"
+          ]
+        }
+      ],
+      "percentage": 0.2
+    },
+    "aging_7d": {
+      "count": 1,
+      "denominator": 10,
+      "issues": [
+        {
+          "actual": null,
+          "estimate": null,
+          "key": "PLAT-107",
+          "summary": "Migrate legacy database schema",
+          "taxonomy": [
+            "planned"
+          ]
+        }
+      ],
+      "percentage": 0.1
+    },
+    "blocked": {
+      "count": 1,
+      "denominator": 10,
+      "issues": [
+        {
+          "actual": null,
+          "estimate": null,
+          "key": "PLAT-109",
+          "summary": "Fix broken login flow after deploy",
+          "taxonomy": [
+            "bug",
+            "incident",
+            "unplanned"
+          ]
+        }
+      ],
+      "percentage": 0.1
+    },
+    "reopened": {
+      "count": 1,
+      "denominator": 10,
+      "issues": [
+        {
+          "actual": null,
+          "estimate": 3,
+          "key": "PLAT-110",
+          "summary": "Handle payment gateway timeout errors",
+          "taxonomy": [
+            "bug",
+            "planned"
+          ]
+        }
+      ],
+      "percentage": 0.1
+    },
+    "stale": {
+      "count": null,
+      "denominator": null,
+      "issues": null,
+      "percentage": null,
+      "reason": "requires a Jira history predicate for time since last update; cannot substitute updated timestamp for time-active duration",
+      "unavailable": true
+    }
+  },
+  "friction": {
+    "blocked": {
+      "composition": {
+        "bug": {
+          "count": 1,
+          "denominator": 1,
+          "issues": [
+            {
+              "actual": null,
+              "estimate": null,
+              "key": "PLAT-109",
+              "summary": "Fix broken login flow after deploy",
+              "taxonomy": [
+                "bug",
+                "incident",
+                "unplanned"
+              ]
+            }
+          ],
+          "percentage": 1.0
+        },
+        "chore": {
+          "count": 0,
+          "denominator": 1,
+          "issues": [],
+          "percentage": 0.0
+        },
+        "incident": {
+          "count": 1,
+          "denominator": 1,
+          "issues": [
+            {
+              "actual": null,
+              "estimate": null,
+              "key": "PLAT-109",
+              "summary": "Fix broken login flow after deploy",
+              "taxonomy": [
+                "bug",
+                "incident",
+                "unplanned"
+              ]
+            }
+          ],
+          "percentage": 1.0
+        },
+        "planned": {
+          "count": 0,
+          "denominator": 1,
+          "issues": [],
+          "percentage": 0.0
+        },
+        "responsibility": {
+          "count": 0,
+          "denominator": 1,
+          "issues": [],
+          "percentage": 0.0
+        },
+        "support": {
+          "count": 0,
+          "denominator": 1,
+          "issues": [],
+          "percentage": 0.0
+        },
+        "unplanned": {
+          "count": 1,
+          "denominator": 1,
+          "issues": [
+            {
+              "actual": null,
+              "estimate": null,
+              "key": "PLAT-109",
+              "summary": "Fix broken login flow after deploy",
+              "taxonomy": [
+                "bug",
+                "incident",
+                "unplanned"
+              ]
+            }
+          ],
+          "percentage": 1.0
+        }
+      },
+      "count": 1,
+      "denominator": 10,
+      "issues": [
+        {
+          "actual": null,
+          "estimate": null,
+          "key": "PLAT-109",
+          "summary": "Fix broken login flow after deploy",
+          "taxonomy": [
+            "bug",
+            "incident",
+            "unplanned"
+          ]
+        }
+      ],
+      "percentage": 0.1
+    },
+    "reopened": {
+      "composition": {
+        "bug": {
+          "count": 1,
+          "denominator": 1,
+          "issues": [
+            {
+              "actual": null,
+              "estimate": 3,
+              "key": "PLAT-110",
+              "summary": "Handle payment gateway timeout errors",
+              "taxonomy": [
+                "bug",
+                "planned"
+              ]
+            }
+          ],
+          "percentage": 1.0
+        },
+        "chore": {
+          "count": 0,
+          "denominator": 1,
+          "issues": [],
+          "percentage": 0.0
+        },
+        "incident": {
+          "count": 0,
+          "denominator": 1,
+          "issues": [],
+          "percentage": 0.0
+        },
+        "planned": {
+          "count": 1,
+          "denominator": 1,
+          "issues": [
+            {
+              "actual": null,
+              "estimate": 3,
+              "key": "PLAT-110",
+              "summary": "Handle payment gateway timeout errors",
+              "taxonomy": [
+                "bug",
+                "planned"
+              ]
+            }
+          ],
+          "percentage": 1.0
+        },
+        "responsibility": {
+          "count": 0,
+          "denominator": 1,
+          "issues": [],
+          "percentage": 0.0
+        },
+        "support": {
+          "count": 0,
+          "denominator": 1,
+          "issues": [],
+          "percentage": 0.0
+        },
+        "unplanned": {
+          "count": 0,
+          "denominator": 1,
+          "issues": [],
+          "percentage": 0.0
+        }
+      },
+      "count": 1,
+      "denominator": 10,
+      "issues": [
+        {
+          "actual": null,
+          "estimate": 3,
+          "key": "PLAT-110",
+          "summary": "Handle payment gateway timeout errors",
+          "taxonomy": [
+            "bug",
+            "planned"
+          ]
+        }
+      ],
+      "percentage": 0.1
+    }
+  },
+  "history": {
+    "excluded": [
+      {
+        "board_id": 99,
+        "path": "fixtures/history/other-board/analysis.json",
+        "reason": "different board",
+        "sprint_id": 900,
+        "sprint_name": "Other Board Sprint 5"
+      },
+      {
+        "path": "fixtures/history/sprint-42/analysis.json",
+        "reason": "current sprint rerun",
+        "sprint_id": 420,
+        "sprint_name": "Platform Sprint 42"
+      },
+      {
+        "path": "fixtures/history/latest/analysis.json",
+        "reason": "duplicate of the same sprint (latest copy)",
+        "sprint_id": 400,
+        "sprint_name": "Platform Sprint 41"
+      }
+    ],
+    "metrics": {
+      "delivery.completed": {
+        "current": 0.6,
+        "definition": {
+          "denominator": "count(all-issues.json)",
+          "numerator": "count(delivery/completed.json)",
+          "unit": "fraction"
+        },
+        "excluded": [
+          {
+            "reason": "observation kind mismatch: final vs in_progress",
+            "sprint_id": 410,
+            "sprint_name": "Platform Sprint 40",
+            "sprint_start": "2026-07-14T00:00:00.000Z"
+          },
+          {
+            "reason": "observation kind mismatch: final vs in_progress",
+            "sprint_id": 400,
+            "sprint_name": "Platform Sprint 41",
+            "sprint_start": "2026-07-28T00:00:00.000Z"
+          }
+        ],
+        "historical_average": null,
+        "history": [],
+        "previous": null
+      },
+      "delivery.high_priority_incomplete": {
+        "current": 0.3,
+        "definition": {
+          "denominator": "count(all-issues.json)",
+          "numerator": "count(delivery/high_priority_incomplete.json)",
+          "unit": "fraction"
+        },
+        "excluded": [
+          {
+            "reason": "observation kind mismatch: final vs in_progress",
+            "sprint_id": 410,
+            "sprint_name": "Platform Sprint 40",
+            "sprint_start": "2026-07-14T00:00:00.000Z"
+          },
+          {
+            "reason": "observation kind mismatch: final vs in_progress",
+            "sprint_id": 400,
+            "sprint_name": "Platform Sprint 41",
+            "sprint_start": "2026-07-28T00:00:00.000Z"
+          }
+        ],
+        "historical_average": null,
+        "history": [],
+        "previous": null
+      },
+      "delivery.incomplete": {
+        "current": 0.4,
+        "definition": {
+          "denominator": "count(all-issues.json)",
+          "numerator": "count(delivery/incomplete.json)",
+          "unit": "fraction"
+        },
+        "excluded": [
+          {
+            "reason": "observation kind mismatch: final vs in_progress",
+            "sprint_id": 410,
+            "sprint_name": "Platform Sprint 40",
+            "sprint_start": "2026-07-14T00:00:00.000Z"
+          },
+          {
+            "reason": "observation kind mismatch: final vs in_progress",
+            "sprint_id": 400,
+            "sprint_name": "Platform Sprint 41",
+            "sprint_start": "2026-07-28T00:00:00.000Z"
+          }
+        ],
+        "historical_average": null,
+        "history": [],
+        "previous": null
+      },
+      "estimation.missing": {
+        "current": 0.6,
+        "definition": {
+          "denominator": "count(all-issues.json)",
+          "numerator": "count(estimation/missing.json)",
+          "unit": "fraction"
+        },
+        "excluded": [],
+        "historical_average": 0.225,
+        "history": [
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-07-25T09:00:00Z",
+            "sprint_end": "2026-07-25T00:00:00.000Z",
+            "sprint_id": 410,
+            "sprint_name": "Platform Sprint 40",
+            "sprint_start": "2026-07-14T00:00:00.000Z",
+            "value": 0.2
+          },
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-08-08T09:00:00Z",
+            "sprint_end": "2026-08-08T00:00:00.000Z",
+            "sprint_id": 400,
+            "sprint_name": "Platform Sprint 41",
+            "sprint_start": "2026-07-28T00:00:00.000Z",
+            "value": 0.25
+          }
+        ],
+        "previous": 0.25
+      },
+      "estimation.over_100": {
+        "current": 0.25,
+        "definition": {
+          "denominator": "count(estimation/eligible.json)",
+          "numerator": "count(estimation/over_100.json)",
+          "unit": "fraction"
+        },
+        "excluded": [
+          {
+            "reason": "prior value null",
+            "sprint_id": 410,
+            "sprint_name": "Platform Sprint 40",
+            "sprint_start": "2026-07-14T00:00:00.000Z"
+          }
+        ],
+        "historical_average": 0.0,
+        "history": [
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-08-08T09:00:00Z",
+            "sprint_end": "2026-08-08T00:00:00.000Z",
+            "sprint_id": 400,
+            "sprint_name": "Platform Sprint 41",
+            "sprint_start": "2026-07-28T00:00:00.000Z",
+            "value": 0.0
+          }
+        ],
+        "previous": 0.0
+      },
+      "estimation.over_25": {
+        "current": 0.5,
+        "definition": {
+          "denominator": "count(estimation/eligible.json)",
+          "numerator": "count(estimation/over_25.json)",
+          "unit": "fraction"
+        },
+        "excluded": [],
+        "historical_average": 0.325,
+        "history": [
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-07-25T09:00:00Z",
+            "sprint_end": "2026-07-25T00:00:00.000Z",
+            "sprint_id": 410,
+            "sprint_name": "Platform Sprint 40",
+            "sprint_start": "2026-07-14T00:00:00.000Z",
+            "value": 0.25
+          },
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-08-08T09:00:00Z",
+            "sprint_end": "2026-08-08T00:00:00.000Z",
+            "sprint_id": 400,
+            "sprint_name": "Platform Sprint 41",
+            "sprint_start": "2026-07-28T00:00:00.000Z",
+            "value": 0.4
+          }
+        ],
+        "previous": 0.4
+      },
+      "estimation.over_50": {
+        "current": 0.25,
+        "definition": {
+          "denominator": "count(estimation/eligible.json)",
+          "numerator": "count(estimation/over_50.json)",
+          "unit": "fraction"
+        },
+        "excluded": [],
+        "historical_average": 0.225,
+        "history": [
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-07-25T09:00:00Z",
+            "sprint_end": "2026-07-25T00:00:00.000Z",
+            "sprint_id": 410,
+            "sprint_name": "Platform Sprint 40",
+            "sprint_start": "2026-07-14T00:00:00.000Z",
+            "value": 0.25
+          },
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-08-08T09:00:00Z",
+            "sprint_end": "2026-08-08T00:00:00.000Z",
+            "sprint_id": 400,
+            "sprint_name": "Platform Sprint 41",
+            "sprint_start": "2026-07-28T00:00:00.000Z",
+            "value": 0.2
+          }
+        ],
+        "previous": 0.2
+      },
+      "estimation.within_tolerance": {
+        "current": 0.5,
+        "definition": {
+          "denominator": "count(estimation/eligible.json)",
+          "numerator": "count(estimation/within_tolerance.json)",
+          "unit": "fraction"
+        },
+        "excluded": [],
+        "historical_average": 0.45,
+        "history": [
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-07-25T09:00:00Z",
+            "sprint_end": "2026-07-25T00:00:00.000Z",
+            "sprint_id": 410,
+            "sprint_name": "Platform Sprint 40",
+            "sprint_start": "2026-07-14T00:00:00.000Z",
+            "value": 0.5
+          },
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-08-08T09:00:00Z",
+            "sprint_end": "2026-08-08T00:00:00.000Z",
+            "sprint_id": 400,
+            "sprint_name": "Platform Sprint 41",
+            "sprint_start": "2026-07-28T00:00:00.000Z",
+            "value": 0.4
+          }
+        ],
+        "previous": 0.4
+      },
+      "flow.active": {
+        "current": 0.4,
+        "definition": {
+          "denominator": "count(all-issues.json)",
+          "numerator": "count(flow/active.json)",
+          "unit": "fraction"
+        },
+        "excluded": [],
+        "historical_average": 0.15000000000000002,
+        "history": [
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-07-25T09:00:00Z",
+            "sprint_end": "2026-07-25T00:00:00.000Z",
+            "sprint_id": 410,
+            "sprint_name": "Platform Sprint 40",
+            "sprint_start": "2026-07-14T00:00:00.000Z",
+            "value": 0.1
+          },
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-08-08T09:00:00Z",
+            "sprint_end": "2026-08-08T00:00:00.000Z",
+            "sprint_id": 400,
+            "sprint_name": "Platform Sprint 41",
+            "sprint_start": "2026-07-28T00:00:00.000Z",
+            "value": 0.2
+          }
+        ],
+        "previous": 0.2
+      },
+      "flow.aging_2d": {
+        "current": 0.4,
+        "definition": {
+          "denominator": "count(all-issues.json)",
+          "numerator": "count(flow/aging_2d.json)",
+          "unit": "fraction"
+        },
+        "excluded": [],
+        "historical_average": 0.25,
+        "history": [
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-07-25T09:00:00Z",
+            "sprint_end": "2026-07-25T00:00:00.000Z",
+            "sprint_id": 410,
+            "sprint_name": "Platform Sprint 40",
+            "sprint_start": "2026-07-14T00:00:00.000Z",
+            "value": 0.3
+          },
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-08-08T09:00:00Z",
+            "sprint_end": "2026-08-08T00:00:00.000Z",
+            "sprint_id": 400,
+            "sprint_name": "Platform Sprint 41",
+            "sprint_start": "2026-07-28T00:00:00.000Z",
+            "value": 0.2
+          }
+        ],
+        "previous": 0.2
+      },
+      "flow.aging_4d": {
+        "current": 0.2,
+        "definition": {
+          "denominator": "count(all-issues.json)",
+          "numerator": "count(flow/aging_4d.json)",
+          "unit": "fraction"
+        },
+        "excluded": [],
+        "historical_average": 0.1,
+        "history": [
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-07-25T09:00:00Z",
+            "sprint_end": "2026-07-25T00:00:00.000Z",
+            "sprint_id": 410,
+            "sprint_name": "Platform Sprint 40",
+            "sprint_start": "2026-07-14T00:00:00.000Z",
+            "value": 0.1
+          },
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-08-08T09:00:00Z",
+            "sprint_end": "2026-08-08T00:00:00.000Z",
+            "sprint_id": 400,
+            "sprint_name": "Platform Sprint 41",
+            "sprint_start": "2026-07-28T00:00:00.000Z",
+            "value": 0.1
+          }
+        ],
+        "previous": 0.1
+      },
+      "flow.aging_7d": {
+        "current": 0.1,
+        "definition": {
+          "denominator": "count(all-issues.json)",
+          "numerator": "count(flow/aging_7d.json)",
+          "unit": "fraction"
+        },
+        "excluded": [
+          {
+            "reason": "prior value null",
+            "sprint_id": 410,
+            "sprint_name": "Platform Sprint 40",
+            "sprint_start": "2026-07-14T00:00:00.000Z"
+          },
+          {
+            "reason": "prior value null",
+            "sprint_id": 400,
+            "sprint_name": "Platform Sprint 41",
+            "sprint_start": "2026-07-28T00:00:00.000Z"
+          }
+        ],
+        "historical_average": null,
+        "history": [],
+        "previous": null
+      },
+      "flow.blocked": {
+        "current": 0.1,
+        "definition": {
+          "denominator": "count(all-issues.json)",
+          "numerator": "count(flow/blocked.json)",
+          "unit": "fraction"
+        },
+        "excluded": [],
+        "historical_average": 0.15000000000000002,
+        "history": [
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-07-25T09:00:00Z",
+            "sprint_end": "2026-07-25T00:00:00.000Z",
+            "sprint_id": 410,
+            "sprint_name": "Platform Sprint 40",
+            "sprint_start": "2026-07-14T00:00:00.000Z",
+            "value": 0.1
+          },
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-08-08T09:00:00Z",
+            "sprint_end": "2026-08-08T00:00:00.000Z",
+            "sprint_id": 400,
+            "sprint_name": "Platform Sprint 41",
+            "sprint_start": "2026-07-28T00:00:00.000Z",
+            "value": 0.2
+          }
+        ],
+        "previous": 0.2
+      },
+      "flow.reopened": {
+        "current": 0.1,
+        "definition": {
+          "denominator": "count(all-issues.json)",
+          "numerator": "count(flow/reopened.json)",
+          "unit": "fraction"
+        },
+        "excluded": [],
+        "historical_average": 0.05,
+        "history": [
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-07-25T09:00:00Z",
+            "sprint_end": "2026-07-25T00:00:00.000Z",
+            "sprint_id": 410,
+            "sprint_name": "Platform Sprint 40",
+            "sprint_start": "2026-07-14T00:00:00.000Z",
+            "value": 0.0
+          },
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-08-08T09:00:00Z",
+            "sprint_end": "2026-08-08T00:00:00.000Z",
+            "sprint_id": 400,
+            "sprint_name": "Platform Sprint 41",
+            "sprint_start": "2026-07-28T00:00:00.000Z",
+            "value": 0.1
+          }
+        ],
+        "previous": 0.1
+      },
+      "taxonomy.bug": {
+        "current": 0.3,
+        "definition": {
+          "denominator": "count(all-issues.json)",
+          "numerator": "count(taxonomy/bug.json)",
+          "unit": "fraction"
+        },
+        "excluded": [],
+        "historical_average": 0.2,
+        "history": [
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-07-25T09:00:00Z",
+            "sprint_end": "2026-07-25T00:00:00.000Z",
+            "sprint_id": 410,
+            "sprint_name": "Platform Sprint 40",
+            "sprint_start": "2026-07-14T00:00:00.000Z",
+            "value": 0.2
+          },
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-08-08T09:00:00Z",
+            "sprint_end": "2026-08-08T00:00:00.000Z",
+            "sprint_id": 400,
+            "sprint_name": "Platform Sprint 41",
+            "sprint_start": "2026-07-28T00:00:00.000Z",
+            "value": 0.2
+          }
+        ],
+        "previous": 0.2
+      },
+      "taxonomy.chore": {
+        "current": 0.1,
+        "definition": {
+          "denominator": "count(all-issues.json)",
+          "numerator": "count(taxonomy/chore.json)",
+          "unit": "fraction"
+        },
+        "excluded": [],
+        "historical_average": 0.1,
+        "history": [
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-07-25T09:00:00Z",
+            "sprint_end": "2026-07-25T00:00:00.000Z",
+            "sprint_id": 410,
+            "sprint_name": "Platform Sprint 40",
+            "sprint_start": "2026-07-14T00:00:00.000Z",
+            "value": 0.1
+          },
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-08-08T09:00:00Z",
+            "sprint_end": "2026-08-08T00:00:00.000Z",
+            "sprint_id": 400,
+            "sprint_name": "Platform Sprint 41",
+            "sprint_start": "2026-07-28T00:00:00.000Z",
+            "value": 0.1
+          }
+        ],
+        "previous": 0.1
+      },
+      "taxonomy.incident": {
+        "current": 0.2,
+        "definition": {
+          "denominator": "count(all-issues.json)",
+          "numerator": "count(taxonomy/incident.json)",
+          "unit": "fraction"
+        },
+        "excluded": [],
+        "historical_average": 0.125,
+        "history": [
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-07-25T09:00:00Z",
+            "sprint_end": "2026-07-25T00:00:00.000Z",
+            "sprint_id": 410,
+            "sprint_name": "Platform Sprint 40",
+            "sprint_start": "2026-07-14T00:00:00.000Z",
+            "value": 0.1
+          },
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-08-08T09:00:00Z",
+            "sprint_end": "2026-08-08T00:00:00.000Z",
+            "sprint_id": 400,
+            "sprint_name": "Platform Sprint 41",
+            "sprint_start": "2026-07-28T00:00:00.000Z",
+            "value": 0.15
+          }
+        ],
+        "previous": 0.15
+      },
+      "taxonomy.planned": {
+        "current": 0.7,
+        "definition": {
+          "denominator": "count(all-issues.json)",
+          "numerator": "count(taxonomy/planned.json)",
+          "unit": "fraction"
+        },
+        "excluded": [],
+        "historical_average": 0.775,
+        "history": [
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-07-25T09:00:00Z",
+            "sprint_end": "2026-07-25T00:00:00.000Z",
+            "sprint_id": 410,
+            "sprint_name": "Platform Sprint 40",
+            "sprint_start": "2026-07-14T00:00:00.000Z",
+            "value": 0.8
+          },
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-08-08T09:00:00Z",
+            "sprint_end": "2026-08-08T00:00:00.000Z",
+            "sprint_id": 400,
+            "sprint_name": "Platform Sprint 41",
+            "sprint_start": "2026-07-28T00:00:00.000Z",
+            "value": 0.75
+          }
+        ],
+        "previous": 0.75
+      },
+      "taxonomy.responsibility": {
+        "current": 0.1,
+        "definition": {
+          "denominator": "count(all-issues.json)",
+          "numerator": "count(taxonomy/responsibility.json)",
+          "unit": "fraction"
+        },
+        "excluded": [],
+        "historical_average": 0.1,
+        "history": [
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-07-25T09:00:00Z",
+            "sprint_end": "2026-07-25T00:00:00.000Z",
+            "sprint_id": 410,
+            "sprint_name": "Platform Sprint 40",
+            "sprint_start": "2026-07-14T00:00:00.000Z",
+            "value": 0.1
+          },
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-08-08T09:00:00Z",
+            "sprint_end": "2026-08-08T00:00:00.000Z",
+            "sprint_id": 400,
+            "sprint_name": "Platform Sprint 41",
+            "sprint_start": "2026-07-28T00:00:00.000Z",
+            "value": 0.1
+          }
+        ],
+        "previous": 0.1
+      },
+      "taxonomy.support": {
+        "current": 0.1,
+        "definition": {
+          "denominator": "count(all-issues.json)",
+          "numerator": "count(taxonomy/support.json)",
+          "unit": "fraction"
+        },
+        "excluded": [],
+        "historical_average": 0.1,
+        "history": [
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-07-25T09:00:00Z",
+            "sprint_end": "2026-07-25T00:00:00.000Z",
+            "sprint_id": 410,
+            "sprint_name": "Platform Sprint 40",
+            "sprint_start": "2026-07-14T00:00:00.000Z",
+            "value": 0.1
+          },
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-08-08T09:00:00Z",
+            "sprint_end": "2026-08-08T00:00:00.000Z",
+            "sprint_id": 400,
+            "sprint_name": "Platform Sprint 41",
+            "sprint_start": "2026-07-28T00:00:00.000Z",
+            "value": 0.1
+          }
+        ],
+        "previous": 0.1
+      },
+      "taxonomy.unplanned": {
+        "current": 0.3,
+        "definition": {
+          "denominator": "count(all-issues.json)",
+          "numerator": "count(taxonomy/unplanned.json)",
+          "unit": "fraction"
+        },
+        "excluded": [
+          {
+            "reason": "incompatible metric definition",
+            "sprint_id": 400,
+            "sprint_name": "Platform Sprint 41",
+            "sprint_start": "2026-07-28T00:00:00.000Z"
+          }
+        ],
+        "historical_average": 0.2,
+        "history": [
+          {
+            "observation_kind": "final",
+            "observation_time": "2026-07-25T09:00:00Z",
+            "sprint_end": "2026-07-25T00:00:00.000Z",
+            "sprint_id": 410,
+            "sprint_name": "Platform Sprint 40",
+            "sprint_start": "2026-07-14T00:00:00.000Z",
+            "value": 0.2
+          }
+        ],
+        "previous": 0.2
+      }
+    },
+    "sources": [
+      {
+        "observation_kind": "final",
+        "observation_time": "2026-07-25T09:00:00Z",
+        "path": "fixtures/history/sprint-40/analysis.json",
+        "sprint_id": 410,
+        "sprint_name": "Platform Sprint 40",
+        "sprint_start": "2026-07-14T00:00:00.000Z"
+      },
+      {
+        "observation_kind": "final",
+        "observation_time": "2026-08-08T09:00:00Z",
+        "path": "fixtures/history/sprint-41/analysis.json",
+        "sprint_id": 400,
+        "sprint_name": "Platform Sprint 41",
+        "sprint_start": "2026-07-28T00:00:00.000Z"
+      }
+    ]
+  },
+  "intersections": {
+    "incomplete_by_taxonomy": {
+      "bug": {
+        "category_rate": {
+          "count": 2,
+          "denominator": 3,
+          "issues": [
+            {
+              "actual": null,
+              "estimate": null,
+              "key": "PLAT-109",
+              "summary": "Fix broken login flow after deploy",
+              "taxonomy": [
+                "bug",
+                "incident",
+                "unplanned"
+              ]
+            },
+            {
+              "actual": null,
+              "estimate": 3,
+              "key": "PLAT-110",
+              "summary": "Handle payment gateway timeout errors",
+              "taxonomy": [
+                "bug",
+                "planned"
+              ]
+            }
+          ],
+          "percentage": 0.6666666666666666
+        },
+        "composition": {
+          "count": 2,
+          "denominator": 4,
+          "issues": [
+            {
+              "actual": null,
+              "estimate": null,
+              "key": "PLAT-109",
+              "summary": "Fix broken login flow after deploy",
+              "taxonomy": [
+                "bug",
+                "incident",
+                "unplanned"
+              ]
+            },
+            {
+              "actual": null,
+              "estimate": 3,
+              "key": "PLAT-110",
+              "summary": "Handle payment gateway timeout errors",
+              "taxonomy": [
+                "bug",
+                "planned"
+              ]
+            }
+          ],
+          "percentage": 0.5
+        }
+      },
+      "chore": {
+        "category_rate": {
+          "count": 0,
+          "denominator": 1,
+          "issues": [],
+          "percentage": 0.0
+        },
+        "composition": {
+          "count": 0,
+          "denominator": 4,
+          "issues": [],
+          "percentage": 0.0
+        }
+      },
+      "incident": {
+        "category_rate": {
+          "count": 2,
+          "denominator": 2,
+          "issues": [
+            {
+              "actual": null,
+              "estimate": 1,
+              "key": "PLAT-108",
+              "summary": "Resolve authentication service outage",
+              "taxonomy": [
+                "incident",
+                "unplanned"
+              ]
+            },
+            {
+              "actual": null,
+              "estimate": null,
+              "key": "PLAT-109",
+              "summary": "Fix broken login flow after deploy",
+              "taxonomy": [
+                "bug",
+                "incident",
+                "unplanned"
+              ]
+            }
+          ],
+          "percentage": 1.0
+        },
+        "composition": {
+          "count": 2,
+          "denominator": 4,
+          "issues": [
+            {
+              "actual": null,
+              "estimate": 1,
+              "key": "PLAT-108",
+              "summary": "Resolve authentication service outage",
+              "taxonomy": [
+                "incident",
+                "unplanned"
+              ]
+            },
+            {
+              "actual": null,
+              "estimate": null,
+              "key": "PLAT-109",
+              "summary": "Fix broken login flow after deploy",
+              "taxonomy": [
+                "bug",
+                "incident",
+                "unplanned"
+              ]
+            }
+          ],
+          "percentage": 0.5
+        }
+      },
+      "planned": {
+        "category_rate": {
+          "count": 2,
+          "denominator": 7,
+          "issues": [
+            {
+              "actual": null,
+              "estimate": null,
+              "key": "PLAT-107",
+              "summary": "Migrate legacy database schema",
+              "taxonomy": [
+                "planned"
+              ]
+            },
+            {
+              "actual": null,
+              "estimate": 3,
+              "key": "PLAT-110",
+              "summary": "Handle payment gateway timeout errors",
+              "taxonomy": [
+                "bug",
+                "planned"
+              ]
+            }
+          ],
+          "percentage": 0.2857142857142857
+        },
+        "composition": {
+          "count": 2,
+          "denominator": 4,
+          "issues": [
+            {
+              "actual": null,
+              "estimate": null,
+              "key": "PLAT-107",
+              "summary": "Migrate legacy database schema",
+              "taxonomy": [
+                "planned"
+              ]
+            },
+            {
+              "actual": null,
+              "estimate": 3,
+              "key": "PLAT-110",
+              "summary": "Handle payment gateway timeout errors",
+              "taxonomy": [
+                "bug",
+                "planned"
+              ]
+            }
+          ],
+          "percentage": 0.5
+        }
+      },
+      "responsibility": {
+        "category_rate": {
+          "count": 0,
+          "denominator": 1,
+          "issues": [],
+          "percentage": 0.0
+        },
+        "composition": {
+          "count": 0,
+          "denominator": 4,
+          "issues": [],
+          "percentage": 0.0
+        }
+      },
+      "support": {
+        "category_rate": {
+          "count": 0,
+          "denominator": 1,
+          "issues": [],
+          "percentage": 0.0
+        },
+        "composition": {
+          "count": 0,
+          "denominator": 4,
+          "issues": [],
+          "percentage": 0.0
+        }
+      },
+      "unplanned": {
+        "category_rate": {
+          "count": 2,
+          "denominator": 3,
+          "issues": [
+            {
+              "actual": null,
+              "estimate": 1,
+              "key": "PLAT-108",
+              "summary": "Resolve authentication service outage",
+              "taxonomy": [
+                "incident",
+                "unplanned"
+              ]
+            },
+            {
+              "actual": null,
+              "estimate": null,
+              "key": "PLAT-109",
+              "summary": "Fix broken login flow after deploy",
+              "taxonomy": [
+                "bug",
+                "incident",
+                "unplanned"
+              ]
+            }
+          ],
+          "percentage": 0.6666666666666666
+        },
+        "composition": {
+          "count": 2,
+          "denominator": 4,
+          "issues": [
+            {
+              "actual": null,
+              "estimate": 1,
+              "key": "PLAT-108",
+              "summary": "Resolve authentication service outage",
+              "taxonomy": [
+                "incident",
+                "unplanned"
+              ]
+            },
+            {
+              "actual": null,
+              "estimate": null,
+              "key": "PLAT-109",
+              "summary": "Fix broken login flow after deploy",
+              "taxonomy": [
+                "bug",
+                "incident",
+                "unplanned"
+              ]
+            }
+          ],
+          "percentage": 0.5
+        }
+      }
+    },
+    "over_25_by_taxonomy": {
+      "bug": {
+        "category_rate": {
+          "count": 0,
+          "denominator": 3,
+          "issues": [],
+          "percentage": 0.0
+        },
+        "composition": {
+          "count": 0,
+          "denominator": 2,
+          "issues": [],
+          "percentage": 0.0
+        }
+      },
+      "chore": {
+        "category_rate": {
+          "count": 0,
+          "denominator": 1,
+          "issues": [],
+          "percentage": 0.0
+        },
+        "composition": {
+          "count": 0,
+          "denominator": 2,
+          "issues": [],
+          "percentage": 0.0
+        }
+      },
+      "incident": {
+        "category_rate": {
+          "count": 0,
+          "denominator": 2,
+          "issues": [],
+          "percentage": 0.0
+        },
+        "composition": {
+          "count": 0,
+          "denominator": 2,
+          "issues": [],
+          "percentage": 0.0
+        }
+      },
+      "planned": {
+        "category_rate": {
+          "count": 2,
+          "denominator": 7,
+          "issues": [
+            {
+              "actual": 4,
+              "estimate": 3,
+              "key": "PLAT-101",
+              "summary": "Implement user authentication refresh",
+              "taxonomy": [
+                "planned"
+              ]
+            },
+            {
+              "actual": 5,
+              "estimate": 2,
+              "key": "PLAT-106",
+              "summary": "Refactor configuration loader",
+              "taxonomy": [
+                "planned"
+              ]
+            }
+          ],
+          "percentage": 0.2857142857142857
+        },
+        "composition": {
+          "count": 2,
+          "denominator": 2,
+          "issues": [
+            {
+              "actual": 4,
+              "estimate": 3,
+              "key": "PLAT-101",
+              "summary": "Implement user authentication refresh",
+              "taxonomy": [
+                "planned"
+              ]
+            },
+            {
+              "actual": 5,
+              "estimate": 2,
+              "key": "PLAT-106",
+              "summary": "Refactor configuration loader",
+              "taxonomy": [
+                "planned"
+              ]
+            }
+          ],
+          "percentage": 1.0
+        }
+      },
+      "responsibility": {
+        "category_rate": {
+          "count": 0,
+          "denominator": 1,
+          "issues": [],
+          "percentage": 0.0
+        },
+        "composition": {
+          "count": 0,
+          "denominator": 2,
+          "issues": [],
+          "percentage": 0.0
+        }
+      },
+      "support": {
+        "category_rate": {
+          "count": 0,
+          "denominator": 1,
+          "issues": [],
+          "percentage": 0.0
+        },
+        "composition": {
+          "count": 0,
+          "denominator": 2,
+          "issues": [],
+          "percentage": 0.0
+        }
+      },
+      "unplanned": {
+        "category_rate": {
+          "count": 0,
+          "denominator": 3,
+          "issues": [],
+          "percentage": 0.0
+        },
+        "composition": {
+          "count": 0,
+          "denominator": 2,
+          "issues": [],
+          "percentage": 0.0
+        }
+      }
+    }
+  },
+  "observation_kind": "in_progress",
+  "observation_time": "2026-08-18T09:00:00Z",
+  "observations": {
+    "active": {
+      "limits": [
+        "intermittent observations cannot establish exact transition times",
+        "uninterrupted active duration cannot be established"
+      ],
+      "observations": [
+        {
+          "evidence": [
+            {
+              "actual": null,
+              "estimate": null,
+              "key": "PLAT-107",
+              "summary": "Migrate legacy database schema",
+              "taxonomy": [
+                "planned"
+              ]
+            }
+          ],
+          "keys": [
+            "PLAT-107"
+          ],
+          "observation_time": "2026-08-11T09:00:00Z",
+          "sprint_state": "active"
+        },
+        {
+          "evidence": [
+            {
+              "actual": null,
+              "estimate": 2,
+              "key": "PLAT-106",
+              "summary": "Refactor configuration loader",
+              "taxonomy": [
+                "planned"
+              ]
+            },
+            {
+              "actual": null,
+              "estimate": null,
+              "key": "PLAT-107",
+              "summary": "Migrate legacy database schema",
+              "taxonomy": [
+                "planned"
+              ]
+            },
+            {
+              "actual": null,
+              "estimate": 1,
+              "key": "PLAT-108",
+              "summary": "Resolve authentication service outage",
+              "taxonomy": [
+                "incident",
+                "unplanned"
+              ]
+            },
+            {
+              "actual": null,
+              "estimate": null,
+              "key": "PLAT-109",
+              "summary": "Fix broken login flow after deploy",
+              "taxonomy": [
+                "bug",
+                "incident",
+                "unplanned"
+              ]
+            },
+            {
+              "actual": null,
+              "estimate": 8,
+              "key": "PLAT-111",
+              "summary": "Replace legacy caching layer",
+              "taxonomy": [
+                "planned"
+              ]
+            },
+            {
+              "actual": null,
+              "estimate": 3,
+              "key": "PLAT-112",
+              "summary": "Upgrade database client drivers",
+              "taxonomy": [
+                "planned"
+              ]
+            }
+          ],
+          "keys": [
+            "PLAT-106",
+            "PLAT-107",
+            "PLAT-108",
+            "PLAT-109",
+            "PLAT-111",
+            "PLAT-112"
+          ],
+          "observation_time": "2026-08-14T09:00:00Z",
+          "sprint_state": "active"
+        },
+        {
+          "evidence": [
+            {
+              "actual": null,
+              "estimate": null,
+              "key": "PLAT-107",
+              "summary": "Migrate legacy database schema",
+              "taxonomy": [
+                "planned"
+              ]
+            },
+            {
+              "actual": null,
+              "estimate": 1,
+              "key": "PLAT-108",
+              "summary": "Resolve authentication service outage",
+              "taxonomy": [
+                "incident",
+                "unplanned"
+              ]
+            },
+            {
+              "actual": null,
+              "estimate": null,
+              "key": "PLAT-109",
+              "summary": "Fix broken login flow after deploy",
+              "taxonomy": [
+                "bug",
+                "incident",
+                "unplanned"
+              ]
+            },
+            {
+              "actual": null,
+              "estimate": 3,
+              "key": "PLAT-110",
+              "summary": "Handle payment gateway timeout errors",
+              "taxonomy": [
+                "bug",
+                "planned"
+              ]
+            }
+          ],
+          "keys": [
+            "PLAT-107",
+            "PLAT-108",
+            "PLAT-109",
+            "PLAT-110"
+          ],
+          "observation_time": "2026-08-18T09:00:00Z",
+          "sprint_state": "active"
+        }
+      ]
+    },
+    "blocked": {
+      "limits": [
+        "intermittent observations cannot establish exact transition times"
+      ],
+      "observations": [
+        {
+          "evidence": [],
+          "keys": [],
+          "observation_time": "2026-08-11T09:00:00Z",
+          "sprint_state": "active"
+        },
+        {
+          "evidence": [
+            {
+              "actual": null,
+              "estimate": 1,
+              "key": "PLAT-108",
+              "summary": "Resolve authentication service outage",
+              "taxonomy": [
+                "incident",
+                "unplanned"
+              ]
+            }
+          ],
+          "keys": [
+            "PLAT-108"
+          ],
+          "observation_time": "2026-08-14T09:00:00Z",
+          "sprint_state": "active"
+        },
+        {
+          "evidence": [
+            {
+              "actual": null,
+              "estimate": null,
+              "key": "PLAT-109",
+              "summary": "Fix broken login flow after deploy",
+              "taxonomy": [
+                "bug",
+                "incident",
+                "unplanned"
+              ]
+            }
+          ],
+          "keys": [
+            "PLAT-109"
+          ],
+          "observation_time": "2026-08-18T09:00:00Z",
+          "sprint_state": "active"
+        }
+      ]
+    }
+  },
+  "scope": {
+    "added": {
+      "count": 3,
+      "issues": [
+        {
+          "actual": null,
+          "estimate": 1,
+          "key": "PLAT-108",
+          "summary": "Resolve authentication service outage",
+          "taxonomy": [
+            "incident",
+            "unplanned"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": null,
+          "key": "PLAT-109",
+          "summary": "Fix broken login flow after deploy",
+          "taxonomy": [
+            "bug",
+            "incident",
+            "unplanned"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": 3,
+          "key": "PLAT-110",
+          "summary": "Handle payment gateway timeout errors",
+          "taxonomy": [
+            "bug",
+            "planned"
+          ]
+        }
+      ],
+      "keys": [
+        "PLAT-108",
+        "PLAT-109",
+        "PLAT-110"
+      ]
+    },
+    "added_not_unplanned_keys": [
+      "PLAT-110"
+    ],
+    "added_unplanned_keys": [
+      "PLAT-108",
+      "PLAT-109"
+    ],
+    "available": true,
+    "baseline_observation_time": "2026-08-11T09:00:00Z",
+    "baseline_sprint_state": "active",
+    "removed": {
+      "count": 2,
+      "issues": [
+        {
+          "actual": null,
+          "estimate": 8,
+          "key": "PLAT-111",
+          "summary": "Replace legacy caching layer",
+          "taxonomy": [
+            "planned"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": 3,
+          "key": "PLAT-112",
+          "summary": "Upgrade database client drivers",
+          "taxonomy": [
+            "planned"
+          ]
+        }
+      ],
+      "keys": [
+        "PLAT-111",
+        "PLAT-112"
+      ]
+    }
+  },
+  "sprint": {
+    "board_id": 42,
+    "sprint_id": 420,
+    "sprint_name": "Platform Sprint 42"
+  },
+  "taxonomy": {
+    "bug": {
+      "count": 3,
+      "denominator": 10,
+      "issues": [
+        {
+          "actual": 2,
+          "estimate": 2,
+          "key": "PLAT-103",
+          "summary": "Fix session timeout regression",
+          "taxonomy": [
+            "bug",
+            "planned"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": null,
+          "key": "PLAT-109",
+          "summary": "Fix broken login flow after deploy",
+          "taxonomy": [
+            "bug",
+            "incident",
+            "unplanned"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": 3,
+          "key": "PLAT-110",
+          "summary": "Handle payment gateway timeout errors",
+          "taxonomy": [
+            "bug",
+            "planned"
+          ]
+        }
+      ],
+      "percentage": 0.3
+    },
+    "chore": {
+      "count": 1,
+      "denominator": 10,
+      "issues": [
+        {
+          "actual": null,
+          "estimate": null,
+          "key": "PLAT-104",
+          "summary": "Rotate production credentials",
+          "taxonomy": [
+            "chore",
+            "responsibility",
+            "unplanned"
+          ]
+        }
+      ],
+      "percentage": 0.1
+    },
+    "incident": {
+      "count": 2,
+      "denominator": 10,
+      "issues": [
+        {
+          "actual": null,
+          "estimate": 1,
+          "key": "PLAT-108",
+          "summary": "Resolve authentication service outage",
+          "taxonomy": [
+            "incident",
+            "unplanned"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": null,
+          "key": "PLAT-109",
+          "summary": "Fix broken login flow after deploy",
+          "taxonomy": [
+            "bug",
+            "incident",
+            "unplanned"
+          ]
+        }
+      ],
+      "percentage": 0.2
+    },
+    "planned": {
+      "count": 7,
+      "denominator": 10,
+      "issues": [
+        {
+          "actual": 4,
+          "estimate": 3,
+          "key": "PLAT-101",
+          "summary": "Implement user authentication refresh",
+          "taxonomy": [
+            "planned"
+          ]
+        },
+        {
+          "actual": 5,
+          "estimate": 5,
+          "key": "PLAT-102",
+          "summary": "Add rate limiting to public API",
+          "taxonomy": [
+            "planned"
+          ]
+        },
+        {
+          "actual": 2,
+          "estimate": 2,
+          "key": "PLAT-103",
+          "summary": "Fix session timeout regression",
+          "taxonomy": [
+            "bug",
+            "planned"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": null,
+          "key": "PLAT-105",
+          "summary": "Investigate slow dashboard load reports",
+          "taxonomy": [
+            "planned",
+            "support"
+          ]
+        },
+        {
+          "actual": 5,
+          "estimate": 2,
+          "key": "PLAT-106",
+          "summary": "Refactor configuration loader",
+          "taxonomy": [
+            "planned"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": null,
+          "key": "PLAT-107",
+          "summary": "Migrate legacy database schema",
+          "taxonomy": [
+            "planned"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": 3,
+          "key": "PLAT-110",
+          "summary": "Handle payment gateway timeout errors",
+          "taxonomy": [
+            "bug",
+            "planned"
+          ]
+        }
+      ],
+      "percentage": 0.7
+    },
+    "responsibility": {
+      "count": 1,
+      "denominator": 10,
+      "issues": [
+        {
+          "actual": null,
+          "estimate": null,
+          "key": "PLAT-104",
+          "summary": "Rotate production credentials",
+          "taxonomy": [
+            "chore",
+            "responsibility",
+            "unplanned"
+          ]
+        }
+      ],
+      "percentage": 0.1
+    },
+    "support": {
+      "count": 1,
+      "denominator": 10,
+      "issues": [
+        {
+          "actual": null,
+          "estimate": null,
+          "key": "PLAT-105",
+          "summary": "Investigate slow dashboard load reports",
+          "taxonomy": [
+            "planned",
+            "support"
+          ]
+        }
+      ],
+      "percentage": 0.1
+    },
+    "unplanned": {
+      "count": 3,
+      "denominator": 10,
+      "issues": [
+        {
+          "actual": null,
+          "estimate": null,
+          "key": "PLAT-104",
+          "summary": "Rotate production credentials",
+          "taxonomy": [
+            "chore",
+            "responsibility",
+            "unplanned"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": 1,
+          "key": "PLAT-108",
+          "summary": "Resolve authentication service outage",
+          "taxonomy": [
+            "incident",
+            "unplanned"
+          ]
+        },
+        {
+          "actual": null,
+          "estimate": null,
+          "key": "PLAT-109",
+          "summary": "Fix broken login flow after deploy",
+          "taxonomy": [
+            "bug",
+            "incident",
+            "unplanned"
+          ]
+        }
+      ],
+      "percentage": 0.3
+    }
+  }
+}
